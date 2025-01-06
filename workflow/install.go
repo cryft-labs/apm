@@ -10,11 +10,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/cryft-labs/cryftgo/utils/perms"
+	"github.com/MetalBlockchain/metalgo/utils/perms"
 	"github.com/spf13/afero"
 
-	"github.com/ixAnkit/apm/checksum"
-	"github.com/ixAnkit/apm/state"
+	"github.com/MetalBlockchain/apm/checksum"
+	"github.com/MetalBlockchain/apm/state"
 )
 
 var _ Workflow = &Install{}

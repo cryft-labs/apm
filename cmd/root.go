@@ -8,16 +8,16 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/cryft-labs/cryftgo/utils/wrappers"
+	"github.com/MetalBlockchain/metalgo/utils/wrappers"
 	"github.com/go-git/go-git/v5/plumbing/transport/http"
 	"github.com/spf13/afero"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"gopkg.in/yaml.v3"
 
-	"github.com/ixAnkit/apm/apm"
-	"github.com/ixAnkit/apm/config"
-	"github.com/ixAnkit/apm/constant"
+	"github.com/MetalBlockchain/apm/apm"
+	"github.com/MetalBlockchain/apm/config"
+	"github.com/MetalBlockchain/apm/constant"
 )
 
 var (
@@ -48,7 +48,7 @@ func New(fs afero.Fs) (*cobra.Command, error) {
 
 	rootCmd.PersistentFlags().String(configFileKey, "", "path to configuration file for the apm")
 	rootCmd.PersistentFlags().String(apmPathKey, apmDir, "path to the directory apm creates its artifacts")
-	rootCmd.PersistentFlags().String(pluginPathKey, filepath.Join(goPath, "src", "github.com", "ixAnkit", "metalgo", "build", "plugins"), "path to metal plugin directory")
+	rootCmd.PersistentFlags().String(pluginPathKey, filepath.Join(goPath, "src", "github.com", "MetalBlockchain", "metalgo", "build", "plugins"), "path to metal plugin directory")
 	rootCmd.PersistentFlags().String(credentialsFileKey, "", "path to credentials file")
 	rootCmd.PersistentFlags().String(adminAPIEndpointKey, "127.0.0.1:9650/ext/admin", "endpoint for the metal admin api")
 

@@ -10,8 +10,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ixAnkit/apm/state"
-	"github.com/ixAnkit/apm/types"
+	"github.com/MetalBlockchain/apm/state"
+	"github.com/MetalBlockchain/apm/types"
 )
 
 func TestUninstallExecute(t *testing.T) {
